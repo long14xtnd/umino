@@ -104,8 +104,19 @@ ul.list-action li a .numberic {
 .intro-banner {
     margin: 256px 530px;
     max-width: 800px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
 }
 
+.intro-banner .banner-info {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 
 .top-categories {
@@ -314,4 +325,11 @@ a.img {
 
 ul.list-post {
     margin-top: 40px;
+}
+
+.footer {
+    padding-left: 255px;
+    padding-right: 255px;
+    padding-top: 106px;
+    background: #F5F5F5;
 }
