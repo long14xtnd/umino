@@ -1,0 +1,27 @@
+:root {
+    --text-main: #111111;
+    --text-desc: #555555;
+    --text-discount: #8D979E;
+    --text-price-discount: #9C6D3A;
+
+}
+
+html,
+body {
+    font-family: 'General Sans', sans-serif;
+    font-size: 13px;
+    background: #FFFFFF;
+    ;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.container-main {
+    max-width: 1860px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
