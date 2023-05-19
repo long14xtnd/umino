@@ -141,3 +141,43 @@ ul.list-action li a .numberic {
     color: var(--text-main);
     margin: 15px 0px;
 }
+
+.list-product {
+    margin-left: 255px;
+    margin-right: 255px;
+    margin-top: 40px;
+}
+
+.list-product .product-item a.title {
+    margin-top: 16px;
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.votes {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+
+.list-product .product-item .price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111111;
+}
+
+.new-price {
+    color: var(--text-new-price) !important;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #8D979E !important;
+    font-size: 16px;
+}
