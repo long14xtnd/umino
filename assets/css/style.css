@@ -1,3 +1,4 @@
+/* top links   */
 .top-links {
     padding: 11px 0px;
     max-height: 41px;
@@ -5,8 +6,7 @@
 
 ul.contact {
     color: var(--text-main);
-    /* padding: 11px 0px; */
-    font-weight: 500;
+    font-weight: var(--fw-500);
 }
 
 ul.contact>li.email {
@@ -17,22 +17,24 @@ ul.contact>li.email {
 
 .sign-up span {
     color: var(--text-desc);
-    font-weight: 500;
+    font-weight: var(--fw-700);
     text-decoration: underline;
-    font-weight: 500;
+
 }
 
 .languages {
-    /* padding: 11px 0px; */
-    font-weight: 500;
+    font-weight: var(--fw-500);
     gap: 25px;
 }
 
 ul.languages li .icon {
-    font-size: 12px;
+    font-size: 9px;
     margin-left: 8px;
 }
 
+/* end top links  */
+
+/* main-menu  */
 nav.nav-custom {
     margin: 0px;
     padding: 0px;
@@ -45,8 +47,6 @@ nav.nav-custom {
 
 .main-menu {
     padding: 21px 0px;
-
-    /* max-width: 540px; */
 }
 
 .ul-main-menu>li {
@@ -55,7 +55,7 @@ nav.nav-custom {
 
 .ul-main-menu>li>a {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: var(--fw-600);
     text-transform: uppercase;
     color: var(--text-main) !important;
 
@@ -63,6 +63,7 @@ nav.nav-custom {
 
 .ul-main-menu>li>a>i.icon {
     margin-left: 5px;
+    font-size: 10px;
 }
 
 ul.list-action {
@@ -76,16 +77,19 @@ ul.list-action li {
 
 ul.list-action li a .numberic {
     position: absolute;
-    right: -27%;
     background: #9C6D3A;
     width: 20px;
     height: 19px;
     border-radius: 50%;
     text-align: center;
-    top: -7%;
+    top: 0%;
     color: white;
+    left: 52%;
 }
 
+/* end main menu  */
+
+/* banner  */
 .banner {
     margin-top: 31px;
 }
@@ -101,30 +105,60 @@ ul.list-action li a .numberic {
 
 }
 
-.intro-banner {
-    margin: 256px 530px;
-    max-width: 800px;
-    position: absolute;
-    top: 10%;
-    right: 10%;
+.promo-section {
+    top: 25%;
 }
 
-.intro-banner .banner-info {
-    font-weight: 600;
+.promo-section__subtitle {
+    font-weight: var(--fw-600);
     font-size: 13px;
-    line-height: 18px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
+.promo-section__title {
+    font-weight: var(--fw-600);
+    font-size: 90px;
+    line-height: 122px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
 
+.promo-section__description {
+    font-weight: var(--fw-500);
+    font-size: 16px;
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+
+.promo-section__button {
+    border-radius: var(--border-radius-1);
+    width: 180px;
+    height: 55px;
+    background: var(--color-white);
+    margin: 0 auto;
+    font-weight: var(--fw-600);
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-size: 13px;
+}
+
+.carousel-indicators>li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 999px;
+}
+
+/* end banner  */
+
+/* top-categories  */
 .top-categories {
     margin: 100px 0px;
 }
 
 .top-title {
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 36px;
     line-height: 49px;
     color: var(--text-main);
@@ -132,7 +166,7 @@ ul.list-action li a .numberic {
 }
 
 .desc-title {
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 14px;
     line-height: 19px;
     color: var(--text-desc);
@@ -146,13 +180,16 @@ ul.list-action li a .numberic {
 
 .list-cate .cate-item>p {
     text-align: center;
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 16px;
     line-height: 22px;
     color: var(--text-main);
     margin: 15px 0px;
 }
 
+/* end top-categories  */
+
+/* top trending   */
 .list-product {
     margin-left: 255px;
     margin-right: 255px;
@@ -164,7 +201,7 @@ ul.list-action li a .numberic {
     display: block;
     margin-bottom: 6px;
     color: var(--text-main);
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 14px;
     line-height: 20px;
 }
@@ -177,7 +214,7 @@ ul.list-action li a .numberic {
 }
 
 .list-product .product-item .price {
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 18px;
     line-height: 24px;
     color: #111111;
@@ -239,6 +276,9 @@ a.img {
     background-color: transparent;
 }
 
+/* end top trending  */
+
+/* banner 2  */
 .banner2 {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -250,17 +290,15 @@ a.img {
     border-radius: 20px;
     padding: 50px;
     position: absolute;
-    width: 560px;
-    height: 372px;
-    left: 1075px;
-    top: 164px;
-    right: 225px;
-    bottom: 164px;
+    max-width: 560px;
+    max-height: 372px;
+    top: 15%;
+    right: 11%;
     text-align: center;
 }
 
 .banner2 .banner2-info .limited {
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
@@ -269,7 +307,7 @@ a.img {
 }
 
 .banner2-title {
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 40px;
     line-height: 54px;
     text-transform: capitalize;
@@ -289,11 +327,14 @@ a.img {
     border-radius: 30px;
     padding: 17px 52px;
     color: #FFFFFF;
-    font-weight: 600;
+    font-weight: var(--fw-600);
     font-size: 12px;
     line-height: 16px;
 }
 
+/* end banner2  */
+
+/* infomation */
 .infomation {
     padding-bottom: 80px;
     margin-left: 350px;
@@ -305,7 +346,7 @@ a.img {
 
 .infomation-title {
     color: #111111;
-    font-weight: 500;
+    font-weight: var(--fw-500);
     font-size: 16px;
     line-height: 22px;
     margin-top: 10px;
@@ -318,6 +359,9 @@ a.img {
     color: #555555;
 }
 
+/* end infomation */
+
+/* follow-us */
 .follow-us {
     margin-left: 255px;
     margin-right: 255px;
@@ -327,9 +371,124 @@ ul.list-post {
     margin-top: 40px;
 }
 
-.footer {
-    padding-left: 255px;
-    padding-right: 255px;
-    padding-top: 106px;
-    background: #F5F5F5;
+/* end follow-us  */
+
+/* footer */
+.c-footer {
+    margin-top: 100px;
+    max-height: 535px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: var(--color-bg-2);
 }
+
+.wrapper-footer {
+    margin: 0 255px;
+}
+
+
+.wrapper-footer .title {
+    font-weight: var(--fw-700);
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.wrapper-footer .top-footer .info-company {
+
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 19px;
+    margin-bottom: 29px;
+}
+
+.wrapper-footer .top-footer .group-networks {
+    display: flex;
+}
+
+.wrapper-footer .top-footer .group-networks>img {
+    margin-right: 10px;
+}
+
+
+.wrapper-footer .top-footer .subcribe {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.wrapper-footer .top-footer .subcribe>input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-1);
+    width: 290px;
+    height: 50px;
+    border: 1px solid #EBEBEB;
+    background: var(--color-white);
+}
+
+.wrapper-footer .top-footer .subcribe>input::placeholder {}
+
+.wrapper-footer .top-footer .subcribe>button {
+    border-radius: var(--border-radius-1);
+    background: var(--color-black);
+    color: var(--color-white);
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+}
+
+.wrapper-footer .top-footer .group-networks>img {
+    width: 30px;
+    height: 30px;
+}
+
+.wrapper-footer .bot-footer {
+    margin-top: 30px;
+}
+
+.wrapper-footer .bot-footer .copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.wrapper-footer .bot-footer .copy-right .eng,
+.us {
+    font-weight: 400;
+}
+
+.wrapper-footer .bot-footer .copy-right .eng .icon,
+.us .icon {
+    font-size: 9px;
+}
+
+.wrapper-footer .bot-footer .copy-right .y2020 {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-footer .bot-footer .payment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.border-footer {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #DEDEDE;
+}
+
+.wrap-border {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+/* end footer  */
